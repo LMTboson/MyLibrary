@@ -1,0 +1,111 @@
+ext {
+
+    objectboxVersion = '2.2.0'
+
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 28,
+            versionCode      : 2,
+            versionName      : "1.2.0"
+    ]
+
+    version = [
+            androidSupportSdkVersion: "28.0.0",
+            retrofitSdkVersion      : "2.6.0",
+            dagger2SdkVersion       : "2.19",
+            glideSdkVersion         : "4.9.0",//4.9.0
+            butterknifeSdkVersion   : "9.0.0",
+            rxlifecycleSdkVersion   : "1.0",
+            rxlifecycle2SdkVersion  : "2.2.1",
+            espressoSdkVersion      : "3.0.2",
+            canarySdkVersion        : "1.5.4"
+    ]
+
+    dependencies = [
+            //support
+            "appcompat-v7"                 : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "design"                       : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+            "support-v4"                   : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "cardview-v7"                  : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "annotations"                  : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"              : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+            "constraint-layout"            : "com.android.support.constraint:constraint-layout:1.1.3",
+            //network
+            "retrofit"                     : "com.squareup.retrofit2:retrofit:${version["retrofitSdkVersion"]}",
+            "retrofit-converter-gson"      : "com.squareup.retrofit2:converter-gson:${version["retrofitSdkVersion"]}",
+            "retrofit-adapter-rxjava"      : "com.squareup.retrofit2:adapter-rxjava:${version["retrofitSdkVersion"]}",
+            "retrofit-adapter-rxjava2"     : "com.squareup.retrofit2:adapter-rxjava2:${version["retrofitSdkVersion"]}",
+            "okhttp3"                      : "com.squareup.okhttp3:okhttp:3.14.2",
+            "okhttp-urlconnection"         : "com.squareup.okhttp:okhttp-urlconnection:2.0.0",
+            "okhttp3:logging-interceptor"  : "com.squareup.okhttp3:logging-interceptor:3.14.2",
+            "glide"                        : "com.github.bumptech.glide:glide:${version["glideSdkVersion"]}",
+            "glide-compiler"               : "com.github.bumptech.glide:compiler:${version["glideSdkVersion"]}",
+            "glide-loader-okhttp3"         : "com.github.bumptech.glide:okhttp3-integration:${version["glideSdkVersion"]}",
+
+            //view
+            "autolayout"                   : "com.zhy:autolayout:1.4.5",
+            "butterknife"                  : "com.jakewharton:butterknife:${version["butterknifeSdkVersion"]}",
+            "butterknife-compiler"         : "com.jakewharton:butterknife-compiler:${version["butterknifeSdkVersion"]}",
+            "pickerview"                   : "com.contrarywind:Android-PickerView:3.2.5",
+            "photoview"                    : "com.github.chrisbanes.photoview:library:1.2.3",
+            "numberprogressbar"            : "com.daimajia.numberprogressbar:library:1.2@aar",
+            "nineoldandroids"              : "com.nineoldandroids:library:2.4.0",
+            "paginate"                     : "com.github.markomilos:paginate:0.5.1",
+            "vlayout"                      : "com.alibaba.android:vlayout:1.1.0@aar",
+            "lottie"                       : "com.airbnb.android:lottie:2.5.4",
+
+            //rx2
+            "rxandroid2"                   : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            "rxjava2"                      : "io.reactivex.rxjava2:rxjava:2.2.9",
+            "rxlifecycle2"                 : "com.trello.rxlifecycle2:rxlifecycle:${version["rxlifecycle2SdkVersion"]}",
+            "rxlifecycle2-android"         : "com.trello.rxlifecycle2:rxlifecycle-android:${version["rxlifecycle2SdkVersion"]}",
+            "rxlifecycle2-components"      : "com.trello.rxlifecycle2:rxlifecycle-components:${version["rxlifecycle2SdkVersion"]}",
+            "rxcache2"                     : "com.github.VictorAlbertos.RxCache:runtime:1.8.3-2.x",
+            "rxpermissions"                : "com.github.tbruyelle:rxpermissions:0.10.2",
+            "rxerrorhandler2"              : "me.jessyan:rxerrorhandler:2.1.1",
+
+            //tools
+            "dagger2"                      : "com.google.dagger:dagger:${version["dagger2SdkVersion"]}",
+            "dagger2-android"              : "com.google.dagger:dagger-android:${version["dagger2SdkVersion"]}",
+            "dagger2-android-support"      : "com.google.dagger:dagger-android-support:${version["dagger2SdkVersion"]}",
+            "dagger2-compiler"             : "com.google.dagger:dagger-compiler:${version["dagger2SdkVersion"]}",
+            "dagger2-android-processor"    : "com.google.dagger:dagger-android-processor:${version["dagger2SdkVersion"]}",
+            "gson"                         : "com.google.code.gson:gson:2.8.2",
+            "multidex"                     : "com.android.support:multidex:1.0.2",
+            "arouter"                      : "com.alibaba:arouter-api:1.5.0",
+            "arouter-compiler"             : "com.alibaba:arouter-compiler:1.2.2",
+            "eventbus"                     : "org.greenrobot:eventbus:3.1.1",
+            "BaseRecyclerViewAdapterHelper": "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.46",
+            "AndPermission"                : "com.yanzhenjie:permission:2.0.0-rc12",
+            "qiniu"                        : "com.qiniu:qiniu-android-sdk:7.3.13",
+            "calendarview"                 : "com.haibin:calendarview:3.4.8",
+            "PickerView"                   : "com.contrarywind:Android-PickerView:4.1.6",
+            "wheelview"                    : "com.contrarywind:wheelview:4.0.8",
+            "WheelPicker"                  : "com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.6",
+            "ultra-ptr"                    : "in.srain.cube:ultra-ptr:1.0.11",
+            "jpush"                        : "cn.jiguang.sdk:jpush:3.1.7",
+            "jcore"                        : "cn.jiguang.sdk:jcore:1.2.6",
+            "takephoto_library"            : "org.devio.takephoto:takephoto_library:4.1.0",
+            "roundedimageview"             : "com.makeramen:roundedimageview:2.3.0",
+            "wechat-without-mta"           : "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+",
+            "umeng-analytics"              : "com.umeng.umsdk:analytics:7.5.4",
+            "umeng-common"                 : "com.umeng.umsdk:common:1.5.4",
+            "growingio"                    : "com.growingio.android:vds-android-agent:autotrack-2.6.2@aar",
+            "objectbrowser"                : "io.objectbox:objectbox-android-objectbrowser:$objectboxVersion",
+            "objectbox-android"            : "io.objectbox:objectbox-android:$objectboxVersion",
+
+
+            //test
+            "junit"                        : "junit:junit:4.12",
+            "androidJUnitRunner"           : "android.support.test.runner.AndroidJUnitRunner",
+            "runner"                       : "com.android.support.test:runner:1.0.2",
+            "espresso-core"                : "com.android.support.test.espresso:espresso-core:${version["espressoSdkVersion"]}",
+            "espresso-contrib"             : "com.android.support.test.espresso:espresso-contrib:${version["espressoSdkVersion"]}",
+            "espresso-intents"             : "com.android.support.test.espresso:espresso-intents:${version["espressoSdkVersion"]}",
+            "logger"                       : "com.orhanobut:logger:2.2.0",
+            "circleimageview"              : "de.hdodenhof:circleimageview:2.2.0",
+    ]
+
+}

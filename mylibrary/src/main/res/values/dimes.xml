@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="divider_height">1px</dimen>
+
+    <!-- 控件 padding、margin 属性边距 -->
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+
+
+    <!-- 字体大小 -->
+</resources>
