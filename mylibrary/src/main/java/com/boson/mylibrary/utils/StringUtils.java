@@ -6,24 +6,13 @@ package com.boson.mylibrary.utils;
  * describe:
  */
 public class StringUtils {
-    private static final StringUtils ourInstance = new StringUtils();
-
-    public static StringUtils getInstance() {
-        return ourInstance;
-    }
-
-    private StringUtils() {
-    }
-
-    public String setText(String content) {
+    public static String setText(String content) {
         if (content == null || content.length() == 0) {
             return "";
         }
         return content;
     }
-
     public static boolean equals(String str1, String str2) {
         return str1 == null ? str2 == null : str1.equals(str2);
     }
-
 }
