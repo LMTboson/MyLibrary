@@ -1,9 +1,10 @@
 package com.boson.simple;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.boson.mylibrary.utils.LogUtils;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.boson.simple.util.LogUtils;
 
 public class MainActivity extends AppCompatActivity {
 
